@@ -5,15 +5,16 @@ publish_to: "none"
 version: 1.0.0+1
 
 environment:
-  sdk: ^3.5.4
+  sdk: ">=3.5.3 <4.0.0"
+  flutter: ^3.27.2 # macos_ui relies on a newer verson of Color
 
 dependencies:
   flutter:
     sdk: flutter
 
-  cupertino_icons: ^1.0.8
-  macos_ui: 2.0.9
-  flutter_acrylic: ^1.1.4
+  cupertino_icons: ^1.0.8 # this is the icon set we're going to use
+  macos_ui: ^2.1.7 # a great collection of macOS widgets.
+  flutter_acrylic: ^1.1.4 # allows us to make the app translucent
 
 dev_dependencies:
 

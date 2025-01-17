@@ -12,6 +12,9 @@ class AppDelegate: FlutterAppDelegate {
   override func applicationShouldTerminateAfterLastWindowClosed(_ sender: NSApplication) -> Bool {
     return false
   }
+  override func applicationSupportsSecureRestorableState(_ app: NSApplication) -> Bool {
+    return true
+  }
   override func applicationDidFinishLaunching(_ aNotification: Notification) {
     // uncomment the line below and the import statement 
     // at the top to enable auto-launching on login

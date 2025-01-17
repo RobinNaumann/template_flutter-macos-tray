@@ -38,7 +38,7 @@ class __DemoState extends State<_Demo> {
       padding: const EdgeInsets.all(16),
       child: Column(
         children: [
-          Expanded(child: Center(child: Icon(animals[i], size: 100))),
+          Expanded(child: Center(child: MacosIcon(animals[i], size: 100))),
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
@@ -49,7 +49,6 @@ class __DemoState extends State<_Demo> {
                 onPressed: () => exit(0),
               ),
               PushButton(
-                secondary: true,
                 controlSize: ControlSize.large,
                 child: const Text('next animal'),
                 onPressed: () => setState(() => i = (i + 1) % animals.length),
